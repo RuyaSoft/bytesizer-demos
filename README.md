@@ -1,16 +1,35 @@
 # ByteSizer Demos
 
-This repository contains sample datasets and configuration templates for demonstrating the capabilities of [ByteSizer](https://bytesizer.ai).
+**ByteSizer is a tool to create data subsets for testing, analytics, and machine learning workflows.**
+
+[![Docker Pulls](https://img.shields.io/badge/docker-ready-blue)](https://github.com/orgs/ruyasoft/packages/container/package/bytesizer)
+
+This repository contains sample datasets and configuration templates to demonstrate the capabilities of [ByteSizer](https://bytesizer.ai).
 
 ## Contents
 
-- `driver_test_scores`: Sample data simulating drivers license test scores
-- `flight_rewards`: Sample data for an airline rewards program
+- [`driver_test_scores`](driver_test_scores/README.md): Sample data simulating drivers license test scores
+- [`flight_rewards`](flight_rewards/README.md): Sample data for an airline rewards program
 
 Use these samples to test ByteSizer locally or in your demo/on-prem environments.
 
+## Repository Structure
+
+```
+.
+├── driver_test_scores/
+│   ├── configs/
+│   ├── input_data/
+│   └── README.md
+├── flight_rewards/
+│   ├── configs/
+│   ├── input_data/
+│   └── README.md
+└── README.md
+```
+
 ## About ByteSizer
-ByteSizer is distributed as a lightweight Docker image that makes it easy to run data subsetting workflows across different datasets and environments. It requires Docker to be installed on the host machine.
+ByteSizer is provided as a lightweight Docker image that makes it easy to run data subsetting workflows across different datasets and environments. It requires Docker to be installed on the host machine.
 
 ## Prerequisites
 
@@ -35,4 +54,12 @@ docker pull ghcr.io/ruyasoft/bytesizer:beta
 This image includes all necessary dependencies and runtime components.
 
 ## Running ByteSizer
-Each dataset or example in this repository (e.g., `driver_test_scores`, `flight_rewards`) includes its own `README.md` file with instructions for how to run ByteSizer on that specific dataset. These instructions describe how to mount the appropriate data and configuration files into the container and execute a sample run.
+Each dataset or example in this repository (e.g., [`driver_test_scores`](driver_test_scores/README.md), [`flight_rewards`](flight_rewards/README.md)) includes its own `README.md` file with instructions for how to run ByteSizer on that specific dataset. These instructions describe how to mount the appropriate data and configuration files into the container and execute a sample run.
+
+## License
+
+This project is licensed under the terms described in the [LICENSE](LICENSE.txt) file.
+
+## Need Help?
+
+Open an issue or contact us at support@bytesizer.ai.

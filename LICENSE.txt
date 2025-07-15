@@ -1,0 +1,89 @@
+ByteSizer.ai End User License Agreement
+
+IMPORTANT: PLEASE READ THIS LICENSE AGREEMENT CAREFULLY BEFORE USING THE SOFTWARE.
+
+This End User License Agreement ("Agreement") is a legal agreement between you (either an individual or a legal entity, referred to as “You” or “Licensee”) and RuyaSoft, the legal owner of the software product known as ByteSizer.ai ("Software").
+
+By installing, copying, or otherwise using the Software, You agree to be bound by the terms of this Agreement. If You do not agree to the terms of this Agreement, do not install or use the Software.
+
+1. DEFINITIONS
+"Software" refers to ByteSizer.ai, including all components, libraries, binaries, documentation, Docker images, configuration files, updates, and modifications provided by RuyaSoft.
+
+"License Key" means a unique key or token issued to You by RuyaSoft, which enables the use of the Software.
+
+"Use" means loading, executing, or displaying the Software within a permitted runtime environment (e.g., Docker container).
+
+## 1.1 Additional Terms
+
+Your access to and use of the Software may be subject to additional Subscription Terms provided by RuyaSoft.com. These Subscription Terms govern the payment, duration, renewal, and termination of your license. In the event of a conflict between this Agreement and the Subscription Terms, the Subscription Terms shall control with respect to payment and subscription matters.
+
+The Subscription Terms are included in this distribution and can be found at /app/SUBSCRIPTION_TERMS.txt.
+
+2. GRANT OF LICENSE
+Subject to full compliance with this Agreement and timely payment of applicable fees, RuyaSoft grants You a limited, non-exclusive, non-transferable, non-sublicensable license to Use the Software solely:
+
+For Your internal business purposes;
+
+On systems owned or controlled by You;
+
+In accordance with the scope, limits, and duration of the License Key provided.
+
+3. LICENSE RESTRICTIONS
+You may not:
+
+Distribute, sublicense, rent, lease, or lend the Software.
+
+Reverse engineer, decompile, disassemble, or attempt to extract the source code, except as expressly permitted by law.
+
+Circumvent or attempt to circumvent any license enforcement or protection mechanisms.
+
+Use the Software without a valid License Key.
+
+Modify, adapt, or create derivative works of the Software.
+
+Any use of the Software outside of the scope permitted in this Agreement constitutes a material breach.
+
+4. LICENSE KEY & VALIDATION
+The Software may require a valid License Key to operate.
+
+RuyaSoft may include license enforcement mechanisms, including but not limited to environment variable checks, server validation, or usage metering.
+
+You are responsible for ensuring your systems are configured with a valid License Key.
+
+5. UPDATES AND SUPPORT
+RuyaSoft may provide updates, patches, or new versions at its sole discretion.
+
+Access to updates and support may require an active subscription or separate agreement.
+
+6. OWNERSHIP
+ByteSizer.ai is licensed, not sold. All rights, title, and interest in and to the Software, including all intellectual property rights, are and remain the exclusive property of RuyaSoft.
+
+7. TERMINATION
+This Agreement is effective until terminated.
+
+It will automatically terminate if You fail to comply with any term of this Agreement.
+
+Upon termination, You must immediately stop using the Software and delete all copies in Your possession.
+
+RuyaSoft reserves the right to disable License Keys in case of non-compliance or non-payment.
+
+8. DISCLAIMER OF WARRANTIES
+The Software is provided "as is", without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.
+
+9. LIMITATION OF LIABILITY
+In no event will RuyaSoft be liable for any indirect, incidental, special, or consequential damages arising from the use or inability to use the Software, even if advised of the possibility of such damages. RuyaSoft's total liability will not exceed the amount paid by You for the Software.
+
+10. GOVERNING LAW
+This Agreement is governed by and construed in accordance with the laws of Pennsylvania, United States, excluding conflict of law principles.
+
+11. ENTIRE AGREEMENT
+This Agreement constitutes the entire agreement between You and RuyaSoft concerning the Software and supersedes any prior or contemporaneous understandings, written or oral.
+
+12. CONTACT
+If You have any questions regarding this Agreement, please contact:
+
+RuyaSoft
+Email: [hello@RuyaSoft.com]
+Website: https://RuyaSoft.com
+
+© 2025 RuyaSoft. ByteSizer.ai is a trademark of RuyaSoft. All rights reserved.
