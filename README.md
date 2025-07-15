@@ -4,7 +4,7 @@ This repository contains sample datasets and configuration templates for demonst
 
 ## Contents
 
-- `driver_test_scores`: Sample data simulating drivers license test results
+- `driver_test_scores`: Sample data simulating drivers license test scores
 - `flight_rewards`: Sample data for an airline rewards program
 
 Use these samples to test ByteSizer locally or in your demo/on-prem environments.
@@ -19,7 +19,7 @@ To use ByteSizer, ensure that Docker is installed on your system:
 
 * For macOS and Windows: Install [Docker Desktop](https://www.docker.com/products/docker-desktop), which includes everything needed to run containers with a graphical interface for managing them.
 
-* For headless Linux systems (e.g. cloud servers, WSL, or minimal installations): Install the Docker Engine using the appropriate package manager for your distribution (e.g. apt, yum, dnf).
+* For headless Linux systems (e.g. cloud servers, WSL, or minimal installations): Install the Docker Engine using the appropriate package manager for your distribution (e.g. `apt`, `yum`, `dnf`).
 
 After installation, you can verify Docker is working by running:
 ```shell
