@@ -28,7 +28,7 @@ docker run \
     -e LOG_FILE=/flight_rewards/logs/bytesizer-test.log \
     -e YAML_CONFIG_FILE=/flight_rewards/configs/<file-name>.yaml \
     -e BYTESIZER_LICENSE_KEY=${BYTESIZER_LICENSE_KEY} \
-    ruyasoft/bytesizer:beta
+    ghcr.io/ruyasoft/bytesizer:beta
 ```
 
 You could optionally keep your license key in the `.env` file located inside the `flight_rewards` directory by adding `BYTESIZER_LICENSE_KEY=<your-license-key>` and running the following command:
@@ -40,7 +40,7 @@ docker run \
     -e LOG_FILE=/flight_rewards/logs/bytesizer-test.log \
     --env-file flight_rewards/.env \
     -e YAML_CONFIG_FILE=/flight_rewards/configs/<file-name>.yaml \
-    ruyasoft/bytesizer:beta
+    ghcr.io/ruyasoft/bytesizer:beta
 ```
 You can also move any parameter specified with the `-e` flag to the `.env` file and remove the corresponding line from the command above.
 
@@ -49,11 +49,11 @@ You can also move any parameter specified with the `-e` flag to the `.env` file 
 # You are in the bytesizer-demos directory
 docker run `
   -p 4200:4200 `
-  -v "$(Get-Location)\flight_rewards:/flight_rewards \ `
+  -v "$(Get-Location)\flight_rewards:/flight_rewards `
   -v "$(Get-Location)\flight_rewards\logs:/logs" `
   -e LOG_FILE=/flight_rewards/logs/bytesizer-test.log `
   --env-file flight_rewards\.env `
   -e YAML_CONFIG_FILE=/flight_rewards/configs/<file-name>.yaml `
-  ruyasoft/bytesizer:beta
+  ghcr.io/ruyasoft/bytesizer:beta
 ```
 
