@@ -1,5 +1,9 @@
 # Flights Application
 
+**ByteSizer is a tool to create data subsets for testing, analytics, and machine learning workflows.**
+
+[![Docker Pulls](https://img.shields.io/badge/docker-ready-blue)](https://github.com/orgs/ruyasoft/packages/container/package/bytesizer)
+
 This dataset contains airline customer data with their reward program membership status.
 
 Before you start, please see this [README](../README.md) to set up Docker and pull the ByteSizer Docker image.
@@ -57,3 +61,10 @@ docker run `
   ghcr.io/ruyasoft/bytesizer:beta
 ```
 
+## License
+
+This project is licensed under the terms described in the [LICENSE](LICENSE.txt) file.
+
+## Need Help?
+
+Open an issue or contact us at support@bytesizer.ai.
