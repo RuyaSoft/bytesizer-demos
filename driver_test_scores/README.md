@@ -43,7 +43,7 @@ You can also move any parameter specified with the `-e` flag to the `.env` file 
 # You are in the bytesizer-demos directory
 docker run `
   -p 4200:4200 `
-  -v "$(Get-Location)\driver_test_scores:/driver_test_scores `
+  -v "$(Get-Location)\driver_test_scores:/driver_test_scores" `
   -v "$(Get-Location)\driver_test_scores\logs:/logs" `
   -e LOG_FILE=/driver_test_scores/logs/bytesizer-test.log `
   --env-file driver_test_scores\.env `
