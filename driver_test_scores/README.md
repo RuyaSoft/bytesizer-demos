@@ -8,6 +8,7 @@ To run ByteSizer please run the following command at the parent of the `driver_t
 
 ### LINUX / MAC OS
 ```shell
+# You are in the bytesizer-demos folder
 docker run \
     -p 4200:4200 \
     -v $(PWD)/driver_test_scores:/driver_test_scores \
@@ -20,6 +21,7 @@ docker run \
 
 You could optionally keep your license key in the `env` file located inside the `driver_test_scores` folder and run the following command:
 ```shell
+# You are in the bytesizer-demos folder
 docker run \
     -p 4200:4200 \
     -v $(PWD)/driver_test_scores:/driver_test_scores \
