@@ -25,8 +25,8 @@ docker run \
     -p 4200:4200 \
     -v $(PWD)/flight_rewards:/flight_rewards \
     -v $(PWD)/flight_rewards/logs:/logs \
-    -e YAML_CONFIG_FILE=/flight_rewards/configs/<file-name>.yaml \
     -e LOG_FILE=/flight_rewards/logs/bytesizer-test.log \
+    -e YAML_CONFIG_FILE=/flight_rewards/configs/<file-name>.yaml \
     -e BYTESIZER_LICENSE_KEY=${BYTESIZER_LICENSE_KEY} \
     ruyasoft/bytesizer:beta
 ```
@@ -37,9 +37,9 @@ docker run \
     -p 4200:4200 \
     -v $(PWD)/flight_rewards:/flight_rewards \
     -v $(PWD)/flight_rewards/logs:/logs \
+    -e LOG_FILE=/flight_rewards/logs/bytesizer-test.log \
     --env-file flight_rewards/.env \
     -e YAML_CONFIG_FILE=/flight_rewards/configs/<file-name>.yaml \
-    -e LOG_FILE=/flight_rewards/logs/bytesizer-test.log \
     ruyasoft/bytesizer:beta
 ```
 You can also move any parameter specified with the `-e` flag to the `.env` file and remove the corresponding line from the command above.
@@ -51,9 +51,9 @@ docker run `
   -p 4200:4200 `
   -v "$(Get-Location)\flight_rewards:/flight_rewards \ `
   -v "$(Get-Location)\flight_rewards\logs:/logs" `
+  -e LOG_FILE=/flight_rewards/logs/bytesizer-test.log `
   --env-file flight_rewards\.env `
   -e YAML_CONFIG_FILE=/flight_rewards/configs/<file-name>.yaml `
-  -e LOG_FILE=/flight_rewards/logs/bytesizer-test.log `
   ruyasoft/bytesizer:beta
 ```
 
