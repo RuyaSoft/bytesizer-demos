@@ -1,0 +1,36 @@
+workflow:
+  name: "Comprehensive Sampling Workflow"
+  actions:
+    - id: read_file
+      action: READ_FILE_CSV
+      parameters:
+        urlpath: "/flight_rewards/input_data/flight_rewards_data.csv"
+    
+    - id: shuffle
+      action: SHUFFLE
+      parameters:
+        "on": "name"
+      dependencies: ["read_file"]
+
+    - id: sample
+      action: SAMPLE_COMPREHENSIVE
+      parameters:
+        miner_config:
+          ignore_fields_regex: ["id"]      
+      dependencies: ["shuffle"]
+
+    - id: write_file
+      action: WRITE_FILE_CSV
+      parameters:
+        filename: "/flight_rewards/output_data/flight_rewards_edge_cases.csv"
+        single_file: true
+        index: false
+      dependencies: ["sample"]
+
+workflow_runner:
+  cluster_class: "dask.distributed.LocalCluster"
+  cluster_kwargs:
+    n_workers: 1
+    threads_per_worker: 1
+    processes: true
+    preload: "from bytesizer.utils.logging import setup_logger; setup_logger()"

@@ -1,0 +1,30 @@
+workflow:
+  name: "10_pct Random Sampling Workflow"
+  actions:
+    - id: read_file
+      action: READ_FILE_CSV
+      parameters:
+        urlpath: "/flight_rewards/input_data/flight_rewards_data.csv"
+
+    - id: sample
+      action: SAMPLE_RANDOM
+      parameters:
+        frac: 0.1 # 10%
+        random_state: 13
+      dependencies: ["read_file"]
+
+    - id: write_file
+      action: WRITE_FILE_CSV
+      parameters:
+        filename: "/flight_rewards/output_data/flight_rewards_10_percent.csv"
+        single_file: true
+        index: false
+      dependencies: ["sample"]
+
+workflow_runner:
+  cluster_class: "dask.distributed.LocalCluster"
+  cluster_kwargs:
+    n_workers: 1
+    threads_per_worker: 1
+    processes: true
+    preload: "from bytesizer.utils.logging import setup_logger; setup_logger()"

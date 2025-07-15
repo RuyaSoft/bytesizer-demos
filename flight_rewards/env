@@ -1,0 +1,4 @@
+YAML_CONFIG_FILE=/flight_rewards/configs/sample_comprehensive.yaml
+LOG_FILE=/flight_rewards/logs/bytesizer-test.log
+LOG_LEVEL=DEBUG
+BYTESIZER_LICENSE_KEY=<YOUR LICENSE KEY HERE>

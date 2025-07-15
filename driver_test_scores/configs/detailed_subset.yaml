@@ -1,0 +1,65 @@
+
+
+workflow:
+  name: "More detailed subsettıng workflow"
+  actions:
+    - id: read_file
+      action: READ_FILE_JSON
+      parameters:
+        url_path: "/driver_test_scores/input_data/json_data.json"
+        lines: true
+
+    - id: random_ten_percent_sample
+      action: SAMPLE_RANDOM
+      parameters:
+        frac: 0.1 # 10%
+        random_state: 13
+      dependencies: ["read_file"]
+
+    - id: comprehensive_sample
+      action: SAMPLE_COMPREHENSIVE
+      parameters:
+        rounds: 2
+        miner_config:
+          ignore_fields_regex: ["id"]
+        type_config:
+          age: int64
+      dependencies: ["read_file"]
+
+    - id: older_than_forty_sample
+      action: SAMPLE_CUSTOM_PANDAS
+      parameters:
+        query: "age > 40"
+      dependencies: ["read_file"]
+
+    - id: merge_samples
+      action: MERGE
+      dependencies: ["random_ten_percent_sample", "comprehensive_sample", "older_than_forty_sample"]
+
+    - id: deduplicate
+      action: DEDUPLICATE
+      parameters:
+        keep: "first"
+      dependencies: ["merge_samples"]
+
+    - id: sort_by_id
+      action: SORT
+      parameters:
+        by: "id"
+      dependencies: ["deduplicate"]
+
+    - id: write_file
+      action: WRITE_FILE_JSON
+      parameters:
+        path_or_buf: "/driver_test_scores/output_data/json_output_detailed.json"
+        single_file: true
+        index: false
+        orient: records
+        lines: true
+      dependencies: ["sort_by_id"]
+
+workflow_runner:
+  cluster_class: "dask.distributed.LocalCluster"
+  cluster_kwargs:
+    n_workers: 1
+    threads_per_worker: 1

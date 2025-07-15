@@ -1,0 +1,50 @@
+{"id": 1, "name": "Alice", "age": 34, "city": "New York", "score": 88.5}
+{"id": 2, "name": "Bob", "age": 28, "city": "Los Angeles", "score": 76.0}
+{"id": 3, "name": "Charlie", "age": 41, "city": "Chicago", "score": 92.3}
+{"id": 4, "name": "Diana", "age": 25, "city": "Houston", "score": 81.7}
+{"id": 5, "name": "Evan", "age": 37, "city": "Phoenix", "score": 68.9}
+{"id": 6, "name": "Fiona", "age": 30, "city": "Philadelphia", "score": 85.4}
+{"id": 7, "name": "George", "age": 45, "city": "San Antonio", "score": 90.1}
+{"id": 8, "name": "Hannah", "age": 32, "city": "San Diego", "score": 79.5}
+{"id": 9, "name": "Ian", "age": 29, "city": "Dallas", "score": 73.2}
+{"id": 10, "name": "Jane", "age": 36, "city": "San Jose", "score": 88.9}
+{"id": 11, "name": "Kyle", "age": 27, "city": "Austin", "score": 75.5}
+{"id": 12, "name": "Laura", "age": 38, "city": "Jacksonville", "score": 83.1}
+{"id": 13, "name": "Mike", "age": 42, "city": "Fort Worth", "score": 91.2}
+{"id": 14, "name": "Nina", "age": 26, "city": "Columbus", "score": 77.4}
+{"id": 15, "name": "Oscar", "age": 33, "city": "Charlotte", "score": 82.6}
+{"id": 16, "name": "Paula", "age": 31, "city": "San Francisco", "score": 87.7}
+{"id": 17, "name": "Quinn", "age": 40, "city": "Indianapolis", "score": 89.5}
+{"id": 18, "name": "Rachel", "age": 24, "city": "Seattle", "score": 74.3}
+{"id": 19, "name": "Steve", "age": 39, "city": "Denver", "score": 86.8}
+{"id": 20, "name": "Tina", "age": 35, "city": "Washington", "score": 80.2}
+{"id": 21, "name": "Uma", "age": 29, "city": "Boston", "score": 78.1}
+{"id": 22, "name": "Victor", "age": 41, "city": "El Paso", "score": 90.9}
+{"id": 23, "name": "Wendy", "age": 30, "city": "Detroit", "score": 83.5}
+{"id": 24, "name": "Xavier", "age": 43, "city": "Nashville", "score": 92.7}
+{"id": 25, "name": "Yara", "age": 28, "city": "Memphis", "score": 76.8}
+{"id": 26, "name": "Zane", "age": 36, "city": "Portland", "score": 85.2}
+{"id": 27, "name": "Amy", "age": 32, "city": "Oklahoma City", "score": 79.6}
+{"id": 28, "name": "Brian", "age": 39, "city": "Las Vegas", "score": 87.3}
+{"id": 29, "name": "Clara", "age": 25, "city": "Louisville", "score": 81.4}
+{"id": 30, "name": "Daniel", "age": 37, "city": "Baltimore", "score": 88.2}
+{"id": 31, "name": "Elena", "age": 34, "city": "Milwaukee", "score": 84.7}
+{"id": 32, "name": "Frank", "age": 40, "city": "Albuquerque", "score": 90.4}
+{"id": 33, "name": "Gloria", "age": 27, "city": "Tucson", "score": 77.5}
+{"id": 34, "name": "Henry", "age": 38, "city": "Fresno", "score": 86.1}
+{"id": 35, "name": "Ivy", "age": 31, "city": "Sacramento", "score": 82.0}
+{"id": 36, "name": "Jack", "age": 29, "city": "Kansas City", "score": 78.7}
+{"id": 37, "name": "Karen", "age": 42, "city": "Long Beach", "score": 89.2}
+{"id": 38, "name": "Leo", "age": 26, "city": "Mesa", "score": 75.8}
+{"id": 39, "name": "Mona", "age": 35, "city": "Atlanta", "score": 84.3}
+{"id": 40, "name": "Nathan", "age": 33, "city": "Colorado Springs", "score": 83.8}
+{"id": 41, "name": "Olivia", "age": 30, "city": "Virginia Beach", "score": 81.9}
+{"id": 42, "name": "Paul", "age": 45, "city": "Raleigh", "score": 90.7}
+{"id": 43, "name": "Queenie", "age": 24, "city": "Omaha", "score": 74.0}
+{"id": 44, "name": "Ray", "age": 39, "city": "Miami", "score": 88.4}
+{"id": 45, "name": "Sophie", "age": 36, "city": "Oakland", "score": 85.9}
+{"id": 46, "name": "Tom", "age": 28, "city": "Minneapolis", "score": 77.1}
+{"id": 47, "name": "Ursula", "age": 41, "city": "Tulsa", "score": 89.8}
+{"id": 48, "name": "Vince", "age": 34, "city": "Arlington", "score": 84.6}
+{"id": 49, "name": "Willow", "age": 31, "city": "New Orleans", "score": 82.3}
+{"id": 50, "name": "Xena", "age": 37, "city": "Wichita", "score": 86.5}
