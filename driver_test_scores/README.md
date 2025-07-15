@@ -43,6 +43,8 @@ docker run \
 You can also move any parameter specified with the `-e` flag to the `.env` file and remove the corresponding line from the command above.
 
 ### Windows 
+> **Note:** The following command is intended for use in **PowerShell**. The backtick character (\`) at the end of each line is used for line continuation in PowerShell. If you are using Command Prompt (cmd.exe), you will need to adjust the syntax accordingly.
+
 ```shell
 # You are in the bytesizer-demos directory
 docker run `

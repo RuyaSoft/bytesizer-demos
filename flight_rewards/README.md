@@ -9,9 +9,16 @@ This dataset contains airline customer data with their reward program membership
 Before you start, please see this [README](../README.md) to set up Docker and pull the ByteSizer Docker image.
 
 There is an input data file at `input_data/flight_rewards_data.csv` that originally contained 25,000 rows and we manually added 5 more containing some edge cases.
-The data contains the following fields: `id, name, age, income, is_active, signup_date, tier`. 
+The data contains the following fields: `id`, `name`, `age`, `income`, `is_active`, `signup_date`, `tier`.
+
+**Sample Data Row:**
+```
+id,name,age,income,is_active,signup_date,tier
+1001,Jane Doe,34,75000,True,2021-03-15,silver
+```
+
 `is_active` indicates whether a customer is currently an active user.
-`tier` indicates the flight rewards program membership level originally with values `free, bronze, silver, gold`. 
+`tier` indicates the flight rewards program membership level originally with values `free`, `bronze`, `silver`, `gold`.
 We have added a new tier `platinum` and one representative row with that value considered as an edge for our purposes.
 We have also added 4 more rows with anomalous values in the `age` and `income` columns again for the purpose of showcasing the edge case sampling capability of ByteSizer.
 
@@ -48,7 +55,9 @@ docker run \
 ```
 You can also move any parameter specified with the `-e` flag to the `.env` file and remove the corresponding line from the command above.
 
-### Windows 
+### Windows
+> **Note:** The following command is intended for use in **PowerShell**. The backtick character (\`) at the end of each line is used for line continuation in PowerShell. If you are using Command Prompt (cmd.exe), you will need to adjust the syntax accordingly.
+
 ```shell
 # You are in the bytesizer-demos directory
 docker run `
