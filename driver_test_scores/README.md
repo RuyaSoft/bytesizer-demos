@@ -24,7 +24,7 @@ docker run \
     ruyasoft/bytesizer:beta
 ```
 
-You could optionally keep your license key in the `.env` file located inside the `driver_test_scores` directory and running` the following command:
+You could optionally keep your license key in the `.env` file located inside the `driver_test_scores` directory and running the following command:
 ```shell
 # You are in the bytesizer-demos directory
 docker run \
