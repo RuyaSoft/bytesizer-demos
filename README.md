@@ -34,5 +34,5 @@ docker pull ghcr.io/ruyasoft/bytesizer:beta
 ```
 This image includes all necessary dependencies and runtime components.
 
-### Running ByteSizer
+## Running ByteSizer
 Each dataset or example in this repository (e.g., `driver_test_scores`, `flight_rewards`) includes its own `README.md` file with instructions for how to run ByteSizer on that specific dataset. These instructions describe how to mount the appropriate data and configuration files into the container and execute a sample run.

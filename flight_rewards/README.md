@@ -29,18 +29,18 @@ docker run \
     ruyasoft/bytesizer:beta
 ```
 
-You could optionally keep your license key in the `env` file located inside the `flight_rewards` directory by adding `BYTESIZER_LICENSE_KEY=<your-license-key>` and running the following command:
+You could optionally keep your license key in the `.env` file located inside the `flight_rewards` directory by adding `BYTESIZER_LICENSE_KEY=<your-license-key>` and running the following command:
 ```shell
 docker run \
     -p 4200:4200 \
     -v $(PWD)/flight_rewards:/flight_rewards \
     -v $(PWD)/flight_rewards/logs:/logs \
-    --env-file flight_rewards/env \
+    --env-file flight_rewards/.env \
     -e YAML_CONFIG_FILE=/flight_rewards/configs/<file-name>.yaml \
     -e LOG_FILE=/flight_rewards/logs/bytesizer-test.log \
     ruyasoft/bytesizer:beta
 ```
-You can also move any parameter specified with the -e flag to the env file and remove the corresponding line from the command above.
+You can also move any parameter specified with the `-e` flag to the `.env` file and remove the corresponding line from the command above.
 
 ### Windows 
 ```shell
@@ -49,7 +49,7 @@ docker run `
   -p 4200:4200 `
   -v "$(Get-Location)\flight_rewards:/flight_rewards \ `
   -v "$(Get-Location)\flight_rewards\logs:/logs" `
-  --env-file flight_rewards\env `
+  --env-file flight_rewards\.env `
   -e YAML_CONFIG_FILE=/flight_rewards/configs/<file-name>.yaml `
   -e LOG_FILE=/flight_rewards/logs/bytesizer-test.log `
   ruyasoft/bytesizer:beta
