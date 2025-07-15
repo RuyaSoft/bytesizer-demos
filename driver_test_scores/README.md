@@ -6,7 +6,9 @@ Before you start, please see this [README](../README.md) to set up Docker and pu
 
 Files are in the `input_data` directory and example ByteSizer configuration files for each respective dataset file are in the `configs` directory.
 
-To run ByteSizer please run the following command at the parent of the `driver_test_scores` directory. Please first replace the `<file-name>` with one of the yaml file names in the `configs` directory and \<YOUR LICENSE KEY\> with the license key provided to you:
+To run ByteSizer:
+* Replace the `<file-name>` with one of the yaml file names in the `configs` directory and `<your-license-key>` with the license key provided to you.
+* Run the following command at the parent of the `driver_test_scores` directory based on your host system.
 
 ### Linux / MacOS
 ```shell
