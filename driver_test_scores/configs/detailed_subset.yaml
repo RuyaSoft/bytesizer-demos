@@ -27,7 +27,7 @@ workflow:
       dependencies: ["read_file"]
 
     - id: older_than_forty_sample
-      action: SAMPLE_CUSTOM_PANDAS
+      action: SAMPLE_WITH_QUERY
       parameters:
         query: "age > 40"
       dependencies: ["read_file"]
