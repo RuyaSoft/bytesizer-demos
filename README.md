@@ -8,7 +8,7 @@ This repository contains sample datasets and configuration templates to demonstr
 
 ## Contents
 
-- [`driver_test_scores`](driver_test_scores/README.md): Sample data simulating drivers license test scores
+- [`driver_test_scores`](driver_test_scores/README.md): Sample data for drivers license test scores
 - [`flight_rewards`](flight_rewards/README.md): Sample data for an airline rewards program
 
 Use these samples to test ByteSizer locally or in your demo/on-prem environments.
