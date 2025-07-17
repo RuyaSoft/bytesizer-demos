@@ -42,10 +42,10 @@ workflow:
         keep: "first"
       dependencies: ["merge_samples"]
 
-    - id: sort_by_id
+    - id: sort_by_age
       action: SORT
       parameters:
-        by: "id"
+        by: "age"
       dependencies: ["deduplicate"]
 
     - id: write_file
@@ -56,7 +56,7 @@ workflow:
         index: false
         orient: records
         lines: true
-      dependencies: ["sort_by_id"]
+      dependencies: ["sort_by_age"]
 
 workflow_runner:
   cluster_class: "dask.distributed.LocalCluster"
