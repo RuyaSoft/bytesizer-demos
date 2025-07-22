@@ -56,7 +56,7 @@ docker run `
 
 ## License
 
-This project is licensed under the terms described in the [LICENSE](LICENSE.txt) file.
+This project is licensed under the terms described in the [LICENSE](../LICENSE.txt) file.
 
 ## Need Help?
 
